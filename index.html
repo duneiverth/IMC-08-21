@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora não mente </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="corpo"> <br><br><br><br><br>
+    <h1 class="titulo">Calcular IMC de:</h1>
+    <p class="texto-imc">
+
+ <!--Fazendo o Script Java-->
+         <script>
+             function calcular(peso,altura){
+                return peso / (altura**2);
+             }
+             alert("Clique em Ok para começar");
+    
+             //Criando variáveis    
+             let nome = prompt("Qual seu nome?");
+             let peso = prompt(nome + ",Qual seu peso?");
+             let altura = prompt(nome + ",Qual sua altura?");
+             let calculo = calcular (peso, altura);
+             let texto = ", Seu IMC é:"
+
+             //Colocando 2 casas decimais 
+             let imc = calculo.toFixed(2);
+
+             //Formatando texto 
+             document.write(nome.italics() + texto.bold () + imc.fontcolor("lilac") );
+
+         </script>
+
+<!--Termino do Script Java-->
+    </p>
+    
+</body>
+</html>
